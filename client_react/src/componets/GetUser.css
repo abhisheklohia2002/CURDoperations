@@ -1,0 +1,52 @@
+.getDisplay{
+ /* border: 2px solid black; */
+ height: 50%;
+ width: 50%;
+ margin: auto;
+ margin-top: 1rem;
+ padding-top: 2rem;
+}
+
+.tr_title,th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(171, 151, 169);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.tr_body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem; 
+    font-weight: lighter;
+    border: 2px solid yellow;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+
+}
+
+.btn{
+    color: brown;
+    width: 5rem;
+    background-color: bisque;
+    outline: none;
+}
+
+.sortname{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: right;
+    padding-right: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.sortname button{
+    height: 2rem;
+    width: 10rem;
+    outline: none;
+}
+.sortname button:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: aqua;
+}

@@ -1,0 +1,38 @@
+
+.div_form{
+
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+.form_body{
+padding-top: 2rem;
+background-color: rgb(183, 231, 172);
+border-radius: 12px;
+margin-top: 1rem;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+input{
+    height: 2.0rem;
+    width: 25rem;
+    margin: 1rem;
+ 
+    background-color: rgb(227, 242, 247);
+    font-size: 1.1rem;
+
+}
+.title{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: teal;
+    text-transform: uppercase;
+    
+
+}
+.submit:hover{
+background-color: rgb(225, 181, 181);
+}
