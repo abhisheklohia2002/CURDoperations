@@ -44,8 +44,8 @@ const HandleDelete = async(id)=>{
                 method:"DELETE",
             });
             const out = await res.json();
-            console.log(out)
             setcount((count)=>count+1)
+            console.log(out)
         
     } catch (error) {
         console.log(error)
