@@ -45,7 +45,7 @@ const HandlePost = async(e)=>{
             alert("User Already Register by this Email")
         }
         else {
-            alert("Register Successfully");
+            alert(" Register Successfully"+" "+out.token);
             nav("/")
         }
     }

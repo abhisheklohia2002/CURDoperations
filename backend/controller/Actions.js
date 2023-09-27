@@ -1,9 +1,10 @@
 const config = require("../config/config");
 const modelUser = require("../model/Schema")
-
+const jwt = require("jsonwebtoken")
 
 
 //read ALl User
+console.log(config.name)
 const GetAllUser = async(req,res)=>{
 
     try {
@@ -31,8 +32,10 @@ const CreateUser = async(req,res)=>{
                     res.status(404).send({message:"please try Again"})
                 }
                 else {
+                    const {_id}  = store
+                    const token =  jwt.sign({_id}, config.name, { expiresIn: '1h' })
                     const result =  await store.save();
-                    res.status(200).send({result,success:true})
+                    res.status(200).send({result,success:true,token:token})
                     return;
                 }
 
