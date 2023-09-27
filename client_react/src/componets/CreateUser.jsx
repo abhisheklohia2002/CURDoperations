@@ -32,7 +32,7 @@ const HandlePost = async(e)=>{
    try {
     if(name!== "" || email !== "" || password !== "" ||mobile !== ""){
 
-        const res=  await fetch(`http://localhost:8000/api/alluser`,{
+        const res=  await fetch(`https://cur-doperations.vercel.app/api/alluser`,{
     method:"POST",
     headers: {
         'Content-Type': 'application/json',

@@ -26,7 +26,7 @@ const [info,setinfo] = useState({
     //Read Request
     const GetUserData = async()=>{
         try {
-            const res=  await fetch("http://localhost:8000/api/alluser");
+            const res=  await fetch("https://cur-doperations.vercel.app/api/alluser");
             const out = await res.json();
             console.log(out)
             setshow([...out])
@@ -40,7 +40,7 @@ const [info,setinfo] = useState({
 
 const HandleDelete = async(id)=>{
     try {
-            const res=  await fetch(`http://localhost:8000/api/alluser/${id}`,{
+            const res=  await fetch(`https://cur-doperations.vercel.app/api/alluser/${id}`,{
                 method:"DELETE",
             });
             const out = await res.json();
@@ -67,7 +67,7 @@ e.preventDefault();
     try {
         if(info.name !== "" || info.email !== "" || info.mobile !== "" ||  info.password !== ""){
 
-            const res = await fetch(`http://localhost:8000/api/alluser/${updateid}`,{
+            const res = await fetch(`https://cur-doperations.vercel.app/api/alluser/${updateid}`,{
                 method:"PUT",
                 headers: {
                     'Content-Type': 'application/json',
