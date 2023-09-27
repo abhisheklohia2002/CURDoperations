@@ -1,12 +1,14 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-
+const port = 8000 || process.env.PORT
 const cors = require("cors");
 const AllRoute = require("./routes/Allroutes")
 app.use(cors());
 
-
+app.get("/",(req,res)=>{
+    res.send({msg:"Hello bro"})
+})
 
 mongoose.connect(`mongodb+srv://king:king@cluster0.addnvdz.mongodb.net/register?retryWrites=true&w=majority`,{
     
@@ -24,7 +26,7 @@ mongoose.connect(`mongodb+srv://king:king@cluster0.addnvdz.mongodb.net/register?
 app.use(express.json());
 app.use("/api",AllRoute)
 
-app.listen(8000,()=>{
+app.listen(port,()=>{
     console.log("sever is running  ")
 })
 
