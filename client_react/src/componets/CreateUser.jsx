@@ -41,7 +41,7 @@ const HandlePost = async(e)=>{
         });
         const out = await res.json();
         console.log(out)
-        if(out.message == "please try Again"){
+        if(out.message === "please try Again"){
             alert("User Already Register by this Email")
         }
         else {
